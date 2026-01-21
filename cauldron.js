@@ -28,13 +28,25 @@ class Cauldron {
         
         switch (effect) {
             case "increase":
-                return Cauldron.essence(ingredients);
+                if (attribute === "hit_points")
+                    return Cauldron.essence(ingredients);
+                else
+                    return Cauldron.failed(ingredients);
             case "decrease":
-                return Cauldron.stench(ingredients);
+                 if (attribute === "hit_points")
+                    return Cauldron.stench(ingredients);
+                else
+                    return Cauldron.failed(ingredients);
             case "boost":
-                return Cauldron.elixir(ingredients, attribute);
+                if (attribute === "hit_points")
+                    return Cauldron.failed(ingredients);
+                else
+                    return Cauldron.elixir(ingredients, attribute);
             case "setback":
-                return Cauldron.venom(ingredients, attribute);  
+                if (attribute === "hit_points")
+                    return Cauldron.failed(ingredients);
+                else
+                    return Cauldron.venom(ingredients, attribute);  
             case "frenzy":
                 return Cauldron.venomFrenzy(ingredients);
             case "calm":

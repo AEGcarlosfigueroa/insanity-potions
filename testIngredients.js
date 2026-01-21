@@ -6,8 +6,8 @@ const testIngredients = [
       "description": "A hard berry that enhances hit points by a small amount.",
       "value": 25,
       "effects": [
-        "increase_hit_points"
-      ],
+         "decrease_hit_points"
+      ], 
       "image": "/images/ingredients/increase/increase_3.webp",
       "type": "ingredient"
     },
@@ -17,11 +17,11 @@ const testIngredients = [
       "description": "A mystical leaf that offers a slight increase in hit points.",
       "value": 8,
       "effects": [
-        "increase_hit_points"
+         "lesser_decrease_hit_points"
       ],
       "image": "/images/ingredients/increase/increase_4.webp",
       "type": "ingredient"
-    },
+    }
     
 ]
 

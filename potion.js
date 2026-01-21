@@ -37,6 +37,7 @@ class Potion {
             return getEffectTypeFromIngredient(ingredient) === "greater";
         }).length;
     
+        //TODO: No consideramos el caso de que un ingrediente tenga modificador incorrecto
         const numNormalIngredients = ingredients.length - numGreaterIngredients - numLeastIngredients - numLesserIngredients;
     
         const numIngredients = [];
