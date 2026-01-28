@@ -299,8 +299,6 @@ describe("tests for generation of stench potions", () => {
             }
         ]
 
-        const expectedName = "Stench of least damage" //least is the least present attribute
-
         const potion = Cauldron.createPotion(ingredients);
 
         expect(potion).not.toBeInstanceOf(Stench);
