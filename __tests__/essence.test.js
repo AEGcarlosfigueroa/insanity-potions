@@ -36,7 +36,7 @@ describe("tests for generation of essence potions", () => {
         const potion = Cauldron.createPotion(ingredients);
 
         expect(potion).toBeInstanceOf(Essence);
-    }),
+    })
     test("when two ingredients have effect name increase, have the same HP attribute, and the same modifier, the resulting potion will have a value 20% higher than the sum of its ingredients", () => {
         const ingredients = [
             {
@@ -253,12 +253,12 @@ describe("tests for generation of essence potions", () => {
     test("when there is an ingredient that does not have Hp attribute, the resulting potion will not be an essence", () => {
         const ingredients = [
             {
-                "_id":"6702b44f76863c206a48cce8",
-                "name":"Giant's Tear",
-                "description":"A tear known for its ability to enhance strength and fortitude.",
-                "value":250,
-                "effects":["greater_restore_strength"],
-                "image":"/images/ingredients/restore/restore_19.webp",
+                "_id":"6702b3b776863c206a48ccd1",
+                "name":"Bloodthorn Berry",
+                "description":"A poisonous berry that slightly decreases one's overall health.",
+                "value":35,
+                "effects":["lesser_decrease_hit_points"],
+                "image":"/images/ingredients/decrease/decrease_3.webp",
                 "type":"ingredient"
             },
             {
