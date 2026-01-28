@@ -1,7 +1,7 @@
 const { Cauldron }  = require ('./../cauldron.js');
 const { Poison } = require('./../poison.js');
 
-describe("tests for generation of antidotes", () => {
+describe("tests for generation of poison", () => {
     test("When all ingredients are of type damage and affecting the same attribute, its name must include 'Poison of'", () => {
         const ingredients = [
             {
